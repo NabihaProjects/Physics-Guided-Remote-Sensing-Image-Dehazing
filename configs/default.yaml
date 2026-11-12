@@ -1,0 +1,51 @@
+# Default Configuration for Remote Sensing Image Dehazing Benchmark
+# All paths, hyperparameters, and seeds are explicitly managed here.
+
+project:
+  name: "rs-dehazing-benchmark"
+  experiment_name: "baseline_experiment"
+  output_dir: "experiments"
+  seed: 42
+  deterministic: true
+
+logging:
+  use_tensorboard: true
+  use_wandb: false
+  wandb_project: "rs-dehazing-benchmark"
+
+hardware:
+  device: "auto"       # "cuda", "mps", "cpu", or "auto"
+  num_workers: 0       # 0 is safe for macOS & sandbox; increase on Linux/Colab T4
+  mixed_precision: true # Automatic Mixed Precision (AMP float16 on CUDA)
+
+data:
+  dataset_name: "synthetic_rs" # "rice1", "rice2", "satehaze1k", "synthetic_rs"
+  data_dir: "data"
+  image_size: 256
+  batch_size: 8
+  val_split: 0.2
+  haze_simulation:
+    beta_range: [0.04, 0.12]      # Scattering coefficient
+    atmospheric_light: [0.7, 1.0] # Range for atmospheric light A
+    non_uniform: true             # Generate spatially varying haze (Perlin-based)
+
+model:
+  name: "rs_pgnet"     # "rs_dcp", "aodnet", "rs_pgnet"
+  in_channels: 3
+  out_channels: 3
+  base_channels: 32
+
+training:
+  epochs: 30
+  learning_rate: 0.0002
+  weight_decay: 0.0001
+  scheduler: "cosine"
+  min_lr: 0.000001
+  save_interval: 5
+  eval_interval: 1
+
+loss_weights:
+  l1: 1.0
+  ssim: 0.2
+  spectral: 0.1
+  tv_transmission: 0.05

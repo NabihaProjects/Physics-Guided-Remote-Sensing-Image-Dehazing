@@ -1,0 +1,22 @@
+dataset,domain_type,model,samples_evaluated,psnr,ssim,ciede2000,sam,ergas,uiqi,qnr,hist,lpips,niqe,fid
+Haze1k_Thin,In-Domain (512x512),DCP (He et al. 2010),45,18.88,0.8762,10.12,5.82,21.81,0.8761,0.4499,0.8895,0.1193,4.07,not run
+Haze1k_Thin,In-Domain (512x512),AOD-Net (CNN Baseline),45,18.08,0.8478,10.49,5.07,24.06,0.8494,0.4748,0.8142,0.1793,4.65,not run
+Haze1k_Thin,In-Domain (512x512),PhysDehaze-Lite (Proposed Novel),45,20.98,0.8945,7.46,2.79,17.33,0.9282,0.637,0.889,0.0903,4.25,not run
+Haze1k_Moderate,In-Domain (512x512),DCP (He et al. 2010),45,18.79,0.8998,11.33,7.44,25.96,0.8352,0.3697,0.8654,0.1376,4.01,not run
+Haze1k_Moderate,In-Domain (512x512),AOD-Net (CNN Baseline),45,19.28,0.8851,11.64,4.14,24.61,0.8279,0.5188,0.8329,0.1958,4.7,not run
+Haze1k_Moderate,In-Domain (512x512),PhysDehaze-Lite (Proposed Novel),45,21.46,0.9109,10.75,4.24,19.39,0.9117,0.5431,0.8545,0.1181,4.25,not run
+Haze1k_Thick,In-Domain (512x512),DCP (He et al. 2010),45,14.11,0.7559,17.66,6.42,37.77,0.7628,0.3617,0.7314,0.2471,3.71,not run
+Haze1k_Thick,In-Domain (512x512),AOD-Net (CNN Baseline),45,14.52,0.717,15.29,3.85,36.08,0.7075,0.4757,0.6977,0.2588,3.76,not run
+Haze1k_Thick,In-Domain (512x512),PhysDehaze-Lite (Proposed Novel),45,18.14,0.8075,10.05,3.25,23.68,0.8672,0.5712,0.8,0.2038,4.47,not run
+RICE1_CrossDomain_ZeroShot,Cross-Domain Zero-Shot (512x512),DCP (He et al. 2010),500,16.28,0.7501,17.48,9.37,43.1,0.5675,0.2826,0.3727,0.3127,4.86,not run
+RICE1_CrossDomain_ZeroShot,Cross-Domain Zero-Shot (512x512),AOD-Net (CNN Baseline),500,16.4,0.7159,16.19,7.2,46.19,0.2722,0.3445,0.2515,0.3096,5.75,not run
+RICE1_CrossDomain_ZeroShot,Cross-Domain Zero-Shot (512x512),PhysDehaze-Lite (Proposed Novel),500,11.48,0.5039,32.13,13.12,67.26,0.3058,0.1792,0.1348,0.4953,7.15,not run
+RRSHID_Thin,Real Haze Zero-Shot (256x256),DCP (He et al. 2010),76,17.58,0.4134,14.49,21.51,74.4,0.4724,0.0655,0.5702,0.4096,5.95,not run
+RRSHID_Thin,Real Haze Zero-Shot (256x256),AOD-Net (CNN Baseline),76,14.57,0.3804,20.68,14.93,109.94,0.1473,0.1086,0.2015,0.6028,6.08,not run
+RRSHID_Thin,Real Haze Zero-Shot (256x256),PhysDehaze-Lite (Proposed Novel),76,21.01,0.5441,8.45,6.41,50.85,0.5808,0.3373,0.5999,0.4158,6.28,not run
+RRSHID_Moderate,Real Haze Zero-Shot (256x256),DCP (He et al. 2010),152,15.05,0.3976,21.09,22.53,84.79,0.4005,0.0563,0.3847,0.5391,6.35,not run
+RRSHID_Moderate,Real Haze Zero-Shot (256x256),AOD-Net (CNN Baseline),152,12.55,0.4355,26.43,20.64,116.87,0.2577,0.0858,0.1537,0.6495,7.99,not run
+RRSHID_Moderate,Real Haze Zero-Shot (256x256),PhysDehaze-Lite (Proposed Novel),152,21.01,0.5867,8.98,5.06,42.12,0.5797,0.4148,0.4653,0.4378,6.51,not run
+RRSHID_Thick,Real Haze Zero-Shot (256x256),DCP (He et al. 2010),76,12.88,0.3464,25.76,19.27,118.13,0.3525,0.0614,0.2332,0.5801,6.59,not run
+RRSHID_Thick,Real Haze Zero-Shot (256x256),AOD-Net (CNN Baseline),76,10.17,0.4026,32.74,16.38,158.77,0.2852,0.0634,0.0878,0.6309,7.83,not run
+RRSHID_Thick,Real Haze Zero-Shot (256x256),PhysDehaze-Lite (Proposed Novel),76,22.32,0.6309,8.24,4.5,37.29,0.656,0.4489,0.3943,0.4174,6.21,not run

@@ -1,0 +1,4 @@
+model,total_parameters,trainable_parameters,model_size_mb,gflops,flops_profiler,mean_latency_ms,std_latency_ms,fps
+DCP (He et al. 2010),0,0,0.0,0.0,N/A (Analytical Prior),2.38,0.54,419.65
+AOD-Net (CNN Baseline),1761,1761,0.007,0.229,torch.utils.flop_counter,1.62,0.26,618.92
+PhysDehaze-Lite (Proposed Novel),323703,323703,1.235,3.731,torch.utils.flop_counter,26.95,5.79,37.1

@@ -1,0 +1,12 @@
+dataset,paper_model,paper_model_type,paper_psnr,paper_ssim,my_model,my_psnr,my_ssim,diff_psnr,diff_ssim,source
+Haze1k_Thin (SH-TN),EMPF-Net,CNN,27.4,0.96,PhysDehaze-Lite,20.98,0.8945,-6.42,-0.0655,base paper Table 6
+Haze1k_Thin (SH-TN),ADND-Net,Diffusion,26.91,0.927,PhysDehaze-Lite,20.98,0.8945,-5.93,-0.0325,base paper Table 6
+Haze1k_Moderate (SH-M),EMPF-Net,CNN,31.45,0.975,PhysDehaze-Lite,21.46,0.9109,-9.99,-0.0641,base paper Table 6
+Haze1k_Moderate (SH-M),ADND-Net,Diffusion,26.67,0.936,PhysDehaze-Lite,21.46,0.9109,-5.21,-0.0251,base paper Table 6
+Haze1k_Thick (SH-TK),EMPF-Net,CNN,26.33,0.928,PhysDehaze-Lite,18.14,0.8075,-8.19,-0.1205,base paper Table 6
+Haze1k_Thick (SH-TK),ADND-Net,Diffusion,26.94,0.936,PhysDehaze-Lite,18.14,0.8075,-8.8,-0.1285,base paper Table 6
+RICE1,EMPF-Net,CNN,35.845,0.979,PhysDehaze-Lite (Zero-Shot),11.48,0.5039,-24.365,-0.4751,base paper Table 6
+RICE1,RSHazeDiff,Diffusion,36.56,0.958,PhysDehaze-Lite (Zero-Shot),11.48,0.5039,-25.08,-0.4541,base paper Table 6
+RRSHID_Thin (Real Haze),PSMB-Net,CNN,23.19,0.643,PhysDehaze-Lite,21.01,0.5441,-2.18,-0.0989,base paper Table 11
+RRSHID_Moderate (Real Haze),DehazeFormer / Trinity-Net,Transformer / CNN,23.36,0.665,PhysDehaze-Lite,21.01,0.5867,-2.35,-0.0783,base paper Table 11
+RRSHID_Thick (Real Haze),PSMB-Net,CNN,25.18,0.726,PhysDehaze-Lite,22.32,0.6309,-2.86,-0.0951,base paper Table 11

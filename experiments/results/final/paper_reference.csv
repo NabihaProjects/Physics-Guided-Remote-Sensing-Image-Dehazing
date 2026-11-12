@@ -1,0 +1,13 @@
+model,model_type,dataset,psnr,ssim,source
+EMPF-Net,CNN,Haze1k_Thin (SH-TN),27.4,0.96,base paper Table 6
+EMPF-Net,CNN,Haze1k_Moderate (SH-M),31.45,0.975,base paper Table 6
+EMPF-Net,CNN,Haze1k_Thick (SH-TK),26.33,0.928,base paper Table 6
+EMPF-Net,CNN,RICE1,35.845,0.979,base paper Table 6
+ADND-Net,Diffusion,Haze1k_Thin (SH-TN),26.91,0.927,base paper Table 6
+ADND-Net,Diffusion,Haze1k_Moderate (SH-M),26.67,0.936,base paper Table 6
+ADND-Net,Diffusion,Haze1k_Thick (SH-TK),26.94,0.936,base paper Table 6
+RSHazeDiff,Diffusion,RICE1,36.56,0.958,base paper Table 6
+PSMB-Net,CNN,RRSHID_Thin (Real Haze),23.19,0.643,base paper Table 11
+DehazeFormer,Transformer,RRSHID_Moderate (Real Haze),23.36,not reported,base paper Table 11
+Trinity-Net,CNN,RRSHID_Moderate (Real Haze),not reported,0.665,base paper Table 11
+PSMB-Net,CNN,RRSHID_Thick (Real Haze),25.18,0.726,base paper Table 11

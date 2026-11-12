@@ -1,0 +1,4 @@
+dataset,model,samples_evaluated,psnr,ssim,ciede2000,sam,ergas,uiqi,qnr,hist,lpips,niqe,domain_type
+RICE1_CrossDomain_ZeroShot,DCP (He et al. 2010),500,16.28,0.7501,17.48,9.37,43.1,0.5675,0.2826,0.3727,0.3127,4.86,Cross-Domain Zero-Shot (512x512)
+RICE1_CrossDomain_ZeroShot,AOD-Net (CNN Baseline),500,16.4,0.7159,16.19,7.2,46.19,0.2722,0.3445,0.2515,0.3096,5.75,Cross-Domain Zero-Shot (512x512)
+RICE1_CrossDomain_ZeroShot,PhysDehaze-Lite (Proposed Novel),500,11.48,0.5039,32.13,13.12,67.26,0.3058,0.1792,0.1348,0.4953,7.15,Cross-Domain Zero-Shot (512x512)

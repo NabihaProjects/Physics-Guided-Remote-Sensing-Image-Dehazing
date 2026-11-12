@@ -1,0 +1,53 @@
+# Configuration for PhysDehaze-Lite (Lightweight Physics-Guided Dehazing Network)
+# Model parameters: ~323k parameters (< 1M parameter budget)
+# Base Paper Reference: Eq. 1: I = J*t + A*(1-t)
+
+project:
+  name: "physdehaze-lite"
+  experiment_name: "physdehaze_lite_haze1k"
+  output_dir: "experiments/physdehaze_lite"
+  seed: 42
+  deterministic: true
+
+logging:
+  use_tensorboard: true
+  use_wandb: false
+
+hardware:
+  device: "auto"       # "mps" if available else "cpu"
+  num_workers: 0       # Safe for macOS DataLoader
+  mixed_precision: false # Float32 only
+
+data:
+  dataset_name: "satehaze1k"
+  data_dir: "data/Haze1k"
+  image_size: 128
+  batch_size: 8
+
+model:
+  name: "physdehaze_lite"
+  in_channels: 3
+  base_channels: 32
+  t_min: 0.10
+
+training:
+  epochs: 10
+  learning_rate: 0.0002
+  weight_decay: 0.0001
+  min_lr: 0.000001
+
+# Individually switchable loss components
+losses:
+  l1:
+    enabled: true
+    weight: 1.0
+  ssim:
+    enabled: true
+    weight: 0.2
+  physics:
+    enabled: true
+    weight: 0.5
+  sam:
+    enabled: true
+    weight: 0.1
+

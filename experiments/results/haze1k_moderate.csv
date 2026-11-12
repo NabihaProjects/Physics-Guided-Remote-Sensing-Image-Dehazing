@@ -1,0 +1,4 @@
+dataset,model,samples_evaluated,psnr,ssim,ciede2000,sam,ergas,uiqi,qnr,hist,lpips,niqe,domain_type
+Haze1k_Moderate,DCP (He et al. 2010),45,18.79,0.8998,11.33,7.44,25.96,0.8352,0.3697,0.8654,0.1376,4.01,In-Domain (512x512)
+Haze1k_Moderate,AOD-Net (CNN Baseline),45,19.28,0.8851,11.64,4.14,24.61,0.8279,0.5188,0.8329,0.1958,4.7,In-Domain (512x512)
+Haze1k_Moderate,PhysDehaze-Lite (Proposed Novel),45,21.46,0.9109,10.75,4.24,19.39,0.9117,0.5431,0.8545,0.1181,4.25,In-Domain (512x512)

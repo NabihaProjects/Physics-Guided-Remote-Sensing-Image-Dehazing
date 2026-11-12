@@ -1,0 +1,4 @@
+dataset,model,samples_evaluated,psnr,ssim,ciede2000,sam,ergas,uiqi,qnr,hist,lpips,niqe,domain_type
+RRSHID_Moderate,DCP (He et al. 2010),152,15.05,0.3976,21.09,22.53,84.79,0.4005,0.0563,0.3847,0.5391,6.35,Real Haze Zero-Shot (256x256)
+RRSHID_Moderate,AOD-Net (CNN Baseline),152,12.55,0.4355,26.43,20.64,116.87,0.2577,0.0858,0.1537,0.6495,7.99,Real Haze Zero-Shot (256x256)
+RRSHID_Moderate,PhysDehaze-Lite (Proposed Novel),152,21.01,0.5867,8.98,5.06,42.12,0.5797,0.4148,0.4653,0.4378,6.51,Real Haze Zero-Shot (256x256)
